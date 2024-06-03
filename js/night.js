@@ -15,10 +15,10 @@ function init() {
 
 
   //Camera setup    
-  const fov = 90;
+  const fov = 120;
   const aspect = container.clientWidth * 1.0/ container.clientHeight * 1.0;
   const near = 0.1;
-  const far = 2000;
+  const far = 2400;
 
   camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(0, 0, 250);
@@ -43,7 +43,7 @@ function init() {
 
   // CUBE
 		// Skybox texture website http://www.custommapmakers.org/skyboxes.php
-		var geometry = new THREE.CubeGeometry( 1400, 1400, 1400 );
+		var geometry = new THREE.CubeGeometry( 2000, 2000, 2000 );
 		var cubeMaterials =
 		[
 			new THREE.MeshBasicMaterial( { map: new THREE.TextureLoader( ).load( 'images/Nightposx.PNG' ), side: THREE.DoubleSide } ), // Right side
