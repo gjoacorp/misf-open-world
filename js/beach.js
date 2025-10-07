@@ -1,4 +1,4 @@
-//Variables for setup
+import * as THREE from 'three';
 
 let container;
 let camera;
